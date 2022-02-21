@@ -11,10 +11,12 @@ public class StackStruTest {
      * 2.反编译：指令javap -v "字节码文件名.class"
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int i = 2;
         int j = 3;
         int k = 2+3;
+        Thread.sleep(6000);
+        System.out.println("hello");
 
     }
 }
